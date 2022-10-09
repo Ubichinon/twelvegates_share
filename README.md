@@ -16,16 +16,16 @@
 以上を守れば快適なGitライフが待っています!
 
 
-### Gitの導入
+## Gitの導入
 ***
-#### Git インストール
+### Git インストール
 GitはGitクライアントとGitサーバを使って操作します。
 以下、Windows向け説明です。
 
 1. Git公式サイトからDL [Git公式](https://git-scm.com/)
 2. インストール　基本全部next押してればOK
 
-#### Git Bash起動～ローカルディレクトリ作成
+### Git Bash起動～ローカルディレクトリ作成
 1. スタートメニューから「Git Bash」を探す。
 2. 起動したら、[PCユーザー名@コンピュータ名　MINGW64 ~]と出ていればOK
 3. ローカルディレクトリ(自分のPCにGit用のフォルダ)を作成する。下記のコマンドをGit Bashに入力。($マークは入力しない)
@@ -36,13 +36,13 @@ $ mkdir tg(半角英数字)
 4. ディレクトリに何が入っているか確認する
 -- カレントディレクトリ一覧に先ほど設定したディレクトリ名があればOK！
 
-#### Visual Studio Code ダウンロード
+### Visual Studio Code ダウンロード
 コード、Markdown、テキストはVSCodeで編集するのが楽なのでダウンロードします
 
 1. [Microsoft公式](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)からVSCodeダウンロード
 2. インストール後、VSCode起動
 
-#### Gitの一般設定
+### Gitの一般設定
 ユーザー名、メールアドレス、エディタを設定して環境構築！
 
 1. ユーザー名、メールアドレス設定 -> 設定内容確認
@@ -74,7 +74,8 @@ $ mkdir tg(半角英数字)
  git config core.editor
  ```
 
-#### ローカルリポジトリを作る
+
+### ローカルリポジトリを作る
 1. tgディレクトリに移動
  1. 先に作成した[tg]ディレクトリに移動する
  ```
@@ -92,16 +93,18 @@ $ mkdir tg(半角英数字)
  ls -a
  ```
 
-#### GitHubを登録する
+### GitHubを登録する
 1. [GitHub公式](https://github.com/)でアカウント作成
 プランは、「フリープラン」でOK
 
-#### GitHubに公開鍵を設定する
+
+### GitHubに公開鍵を設定する
 1. SSH Keyの生成
 Git Bash上で、以下のコマンドを実行する
 ```
 ssh-keygen -t ed25519 -C "自分のメールアドレス"
 ```
+
 
 2. 鍵の保存場所を確認する
 「Enter file in which save the key」と出たらEnterを押す
@@ -133,12 +136,12 @@ ssh -T git@github.com
 7. 3で設定したパスフレーズを入力
 「Hi ユーザー名! You're Successfully authenticated」と表示されればOK！
 
-#### GitHubからプロジェクトをフォーク
+### GitHubからプロジェクトをフォーク
 1. リモートリポジトリは下記URL。「Fork」ボタンを押すだけ
 https://github.com/Ubichinon/twelvegates_share.git
 
 
-#### フォークしたプロジェクトをローカル環境にクローンする
+### フォークしたプロジェクトをローカル環境にクローンする
 1. GitHub上でクローンに必要なURLを取得する
 フォークしたリポジトリ内のCode(緑のボタン)からSSHタブを選択、URLをコピーする
 
@@ -155,7 +158,9 @@ cd twelvegates_share/
 
 ### 終わりに
 とりあえずのGit/GitHub導入までを行いました。
+
 実際にローカル(Git)からリモート(GitHub)に上げるための方法は、別で資料を作りたいと思います。
 
 読んでいただきありがとうございます！
+
 2022.10.07 Kei Miyakawa
